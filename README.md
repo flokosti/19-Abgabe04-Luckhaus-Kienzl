@@ -1,4 +1,4 @@
-#Lab Report Vertiefende Gesamtwiederholung#
+<h1>Lab Report Vertiefende Gesamtwiederholung</h1>
 <p>Abgabe 04</p>
 <p>Pascal Luckhaus</p>
 <p>Eva-Maria Kienzl</p>
@@ -6,7 +6,7 @@
 
 <p>Im Rahmen dieser Übung werden alle Lehrveranstaltungsinhalte von Konfigurationsmanagement gesammelt wiederholt. Dieses Dokument dient als Protokoll.</p>
 
-##Taskliste##
+<h2>Taskliste</h2>
 - [X] Übertragen der Taskliste in Markdown Readme
 - [ ] Einspielen der Queue Vorlage
 - [ ] Korrigieren / Debuggen
@@ -18,6 +18,6 @@
 - [ ] Vollständigkeit der Abgabe überprüfen
 - [ ] Abgabe PDF Version
 
-##Vorgehen##
+<h2>Vorgehen</h2>
 
-##Links / Literatur##
+<h2>Links / Literatur</h2>
