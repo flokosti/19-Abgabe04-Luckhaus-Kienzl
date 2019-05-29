@@ -8,10 +8,11 @@
 
 <h2>Taskliste</h2>
 - [X] Übertragen der Taskliste in Markdown Readme
-- [ ] Einspielen der Queue Vorlage
-- [ ] Korrigieren / Debuggen
+- [x] Einspielen der Queue Vorlage
+- [x] Korrigieren/Verbessern des Sourcecode
 - [ ] Klassen- und Methodenkommentare mittels Javadoc
 - [ ] JUnit Tests erstellen
+- [ ] Programmtest
 - [ ] Anpassen der pom.xml
 - [ ] Maven Site Dokumentation
 - [ ] Erstellung und nachvollziehbarer Markdown Lab Report
