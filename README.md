@@ -1,12 +1,12 @@
-#Lab Report Vertiefende Gesamtwiederholung
-Abgabe 04
-Pascal Luckhaus
-Eva-Maria Kienzl
-Repository: [https://github.com/PascalLuckhaus/19-Abgabe04-Luckhaus-Kienzl.git](https://github.com/PascalLuckhaus/19-Abgabe04-Luckhaus-Kienzl.git)
+#Lab Report Vertiefende Gesamtwiederholung#
+<p>Abgabe 04</p>
+<p>Pascal Luckhaus</p>
+<p>Eva-Maria Kienzl</p>
+<p>Repository: [https://github.com/PascalLuckhaus/19-Abgabe04-Luckhaus-Kienzl.git](https://github.com/PascalLuckhaus/19-Abgabe04-Luckhaus-Kienzl.git)</p>
 
-Im Rahmen dieser Übung werden alle Lehrveranstaltungsinhalte von Konfigurationsmanagement gesammelt wiederholt. Dieses Dokument dient als Protokoll.
+<p>Im Rahmen dieser Übung werden alle Lehrveranstaltungsinhalte von Konfigurationsmanagement gesammelt wiederholt. Dieses Dokument dient als Protokoll.</p>
 
-##Taskliste
+##Taskliste##
 - [X] Übertragen der Taskliste in Markdown Readme
 - [ ] Einspielen der Queue Vorlage
 - [ ] Korrigieren / Debuggen
@@ -18,6 +18,6 @@ Im Rahmen dieser Übung werden alle Lehrveranstaltungsinhalte von Konfigurations
 - [ ] Vollständigkeit der Abgabe überprüfen
 - [ ] Abgabe PDF Version
 
-##Vorgehen
+##Vorgehen##
 
-##Links / Literatur
+##Links / Literatur##
