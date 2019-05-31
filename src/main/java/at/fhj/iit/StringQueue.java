@@ -1,5 +1,7 @@
 package at.fhj.iit;
 
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
@@ -11,6 +13,7 @@ import java.util.NoSuchElementException;
  */
 
 public class StringQueue implements Queue {
+	private static final Logger logger = LogManager.getLogger(StringQueue.class);
 
 	private List<String> elements = new ArrayList<String>();
 	private int maxSize;
@@ -20,6 +23,7 @@ public class StringQueue implements Queue {
 	 * @param maxSize defines the maximum number of elements
 	 */
 	public StringQueue(int maxSize){
+		logger.info("Calling StringQueue constructor");
 		this.maxSize = maxSize;
 	}
 
@@ -29,6 +33,8 @@ public class StringQueue implements Queue {
 	 * @return true if addition is successful, else false
 	 */
 	public boolean offer(String obj) {
+		logger.info("Calling method 'offer'.");
+
 		if(elements.size()!= maxSize) {
 			elements.add(obj);
 			return true;
@@ -42,6 +48,8 @@ public class StringQueue implements Queue {
 	 * 	@return first element or null if no element exists
 	 */
 	public String poll() {
+		logger.info("Calling method 'poll'.");
+
 		String element = peek();
 
 		if(elements.size() != 0){
@@ -57,10 +65,14 @@ public class StringQueue implements Queue {
 	 * @return first element
 	 */
 	public String remove() {
+		logger.info("Calling method 'remove'.");
+
 		String element = poll();		
 
-		if(element == null)
+		if(element == null) {
+			logger.error("...throwing NoSuchElementException");
 			throw new NoSuchElementException("there's no element any more");
+		}
 		
 		return element;
 	}
@@ -70,6 +82,8 @@ public class StringQueue implements Queue {
 	 * @return first element or null if the queue is empty.
 	 */
 	public String peek() {
+		logger.info("Calling method 'peek'.");
+
 		String element;
 		if(elements.size() > 0)
 			element = elements.get(0);
@@ -85,11 +99,14 @@ public class StringQueue implements Queue {
 	 * @return first element
 	 */
 	public String element() {
+		logger.info("Calling method 'element'.");
+
 		String element = peek();
-		if(element == null)
+		if(element == null) {
+			logger.error("...throwing NoSuchElementException");
 			throw new NoSuchElementException("there's no element any more");
+		}
 		
 		return element;
 	}
-
 }
