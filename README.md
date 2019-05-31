@@ -16,9 +16,9 @@ Im Rahmen dieser Übung werden alle Lehrveranstaltungsinhalte von Konfigurations
 - [X] Einspielen der Queue Vorlage
 - [X] Korrigieren / Verbessern
 - [X] Klassen- und Methodenkommentare mittels Javadoc
-- [ ] JUnit Tests erstellen
-- [ ] Programmtestung
-- [ ] Anpassen der pom.xml
+- [X] JUnit Tests erstellen
+- [X] Programmtestung
+- [X] Anpassen der pom.xml
 - [ ] Log4j integrieren
 - [ ] Maven Site Dokumentation
 - [ ] Erstellung und nachvollziehbarer Markdown Lab Report
@@ -37,15 +37,21 @@ Gemeinsame Fehlersuche auf Pascals Laptop:
 - poll()-Methode: Korrektur in if zu != anstelle von ==
 - remove()-Methode: Entfernen der ständigen Überschreibung der Variable Element als leeres Element, nachdem die poll-Methode aufgerufen wurde.
 
-**Anmerkung:** Wir müssen beim JUnit-Test herausfinden, ob die maxSize wirklich verwendet wird (aktuell als redundant angezeigt).
+**Anmerkung:** Wir müssen bei der Programmtestung herausfinden, ob die maxSize wirklich verwendet wird (aktuell als redundant angezeigt).
 
 Pascal hat die Methoden dann zusätzlich etwas übersichtlicher gestaltet: Klammern, return-Werte, etc.
 
 Die Klassen- und Methodenkommentare wurden von Eva verfasst und eine API Dokumentation in folgender Form über IntelliJ-Tools erzeugt:
 
-![JavaDoc](../media/javadoc.png)
+![JavaDoc](media/javadoc.jpg)
 
 License und pom.xml durch Pascal.
+
+Überlegen welche JUnit Tests nötig sind und Vorbereitung gemeinsam. Danach jeder für sich umsetzen der aufgeteilten Tests und Ergänzung der JavaDoc Kommentare. Zur Anmerkung bezüglich maxSize, die in der StringQueue Klasse zugewiesen wird: Wir haben diese gelöscht, weil dem Constructor immer ein Wert mit übergeben wird.
+
+![Testung](media/Testung.jpg)
+
+
 
 Die Verfassung des Lap Reports / readme ist OHNE Markdown Editor passiert. Deshalb kam es hin und wieder zu nötigen Richtigstellungen der Befehle. Für die Zukunft wäre ein entsprechender Editor, in dem die Formatierungsbefehle ausgeführt werden zu empfehlen.
 
