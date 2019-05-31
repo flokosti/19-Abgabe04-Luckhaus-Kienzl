@@ -1,5 +1,7 @@
 package at.fhj.iit;
+
 import org.junit.*;
+import java.util.NoSuchElementException;
 
 /**
  * Test of String queue
@@ -7,7 +9,7 @@ import org.junit.*;
  */
 
 public class StringQueueTest {
-    StringQueue testQueue;
+    private StringQueue testQueue;
 
     /**
      * Builds a String queue with five elements
@@ -19,11 +21,17 @@ public class StringQueueTest {
     }
 
     /**
-     *
+     * Check if queue works according to FIFO principle
      */
     @Test
-    public void addElements() {
+    public void testStoreOrder() {
+        testQueue.offer("Test1");
+        testQueue.offer("Test2");
+        testQueue.offer("Test3");
 
+        Assert.assertEquals("Test1", testQueue.remove());
+        Assert.assertEquals("Test2", testQueue.remove());
+        Assert.assertEquals("Test3", testQueue.remove());
     }
 
     /**
@@ -75,25 +83,37 @@ public class StringQueueTest {
 
     }
 
+    /**
+     * Add an element to queue, call element() 2x and check if both return values are equal
+     */
     @Test
-    public void doubleElement() {
-
+    public void testDoubleElement() {
+        testQueue.offer("Teststring");
+        Assert.assertTrue(testQueue.element().equals(testQueue.element()));
     }
 
-    @Test
-    public void elementOnEmptyQueue() {
-
+    /**
+     * Try to retrieve an element from empty queue using element method
+     */
+    @Test (expected = NoSuchElementException.class)
+    public void testElementUnderflow() {
+        testQueue.element();
     }
 
+    /**
+     * Try to retrieve an element from empty queue using poll method
+     */
     @Test
     public void testPollUnderflow() {
-
+        Assert.assertNull(testQueue.poll());
     }
 
-    @Test
-    public void testRemoveUnderflow() {
-
+    /**
+     * Try to retrieve an element from empty queue using remove method
+     * @throws Exception
+     */
+    @Test (expected = NoSuchElementException.class)
+    public void testRemoveUnderflow() throws Exception {
+        testQueue.remove();
     }
-
-
 }
