@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Description of a queue</title>
+    <meta name="description" content="Basic information about how the String queue works">
+    <meta name="viewpoint" content="width=device-width,
+    initial-scale=1.0">
+  </head>
+
+  <body>
+    A queue is a collection in which the entities in the collection are kept in order. A queue is an example of a linear data structure, or more abstractly a sequential collection.
+    This makes the queue a First-In-First-Out (FIFO) data structure. In a FIFO data structure, the first element added to the queue will be the first one to be removed.
+    This is equivalent to the requirement that once a new element is added, all elements that were added before have to be removed before the new element can be removed.
+
+    A peek method is used, returning the value of the front element without dequeuing it. In addition there is a poll method that returns the value of the first element and deletes ist.
+    The element and remove method are similar to peek and poll but throw an exception if the queue ist empty.
+    To add an element offer can be used. It returns true if the element was added successfully and false if the max size was reached before.
+
+    Ten JUnit test show that the programm works as it should. Aside Maven Site this project as part of an educational course also dealt with log4J, Build Automation via pom.xml, JavaDoc, Debugging or Markdown.
+  </body>
+
+</html>

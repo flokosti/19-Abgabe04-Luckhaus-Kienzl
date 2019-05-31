@@ -19,9 +19,9 @@ Im Rahmen dieser Übung werden alle Lehrveranstaltungsinhalte von Konfigurations
 - [X] JUnit Tests erstellen
 - [X] Programmtestung
 - [X] Anpassen der pom.xml
-- [ ] Log4j integrieren
+- [X] Log4j integrieren
 - [ ] Maven Site Dokumentation
-- [ ] Erstellung und nachvollziehbarer Markdown Lab Report
+- [X] Erstellung und nachvollziehbarer Markdown Lab Report
 - [ ] Vollständigkeit der Abgabe überprüfen
 - [ ] Abgabe PDF Version
 
@@ -34,7 +34,7 @@ Bei der Erstellung des readme durch Eva wurde die Taskliste in einem ersten Schr
 
 Pascal hat währenddessen die Queue Vorlage ins Repository eingespielt (mit einem kleinem Merge Konflikt). Die pom.xml ist in der mitgelieferten Form enthalten und gitignore wurde erstellt.
 
-###Korrektur des Codes
+### Korrektur des Codes
 Gemeinsame Fehlersuche auf Pascals Laptop:
 - Übergabeparameter bei Constructor richtig stellen
 - poll()-Methode: Korrektur in if zu != anstelle von ==
@@ -44,15 +44,16 @@ Gemeinsame Fehlersuche auf Pascals Laptop:
 
 Pascal hat die Methoden dann zusätzlich etwas übersichtlicher gestaltet: Klammern, return-Werte, etc.
 
-###JavaDoc
+### JavaDoc
 Die Klassen- und Methodenkommentare wurden von Eva verfasst und eine API Dokumentation in folgender Form über IntelliJ-Tools erzeugt:
 
 ![JavaDoc](media/javadoc.jpg)
 
-###pom.xml
+### pom.xml
 Ergänzung License und Entwicklerinformationen in der pom.xml durch Pascal.
 
-Überlegen welche JUnit Tests nötig sind und Vorbereitung der Methoden gemeinsam. Danach jeder für sich umsetzen der aufgeteilten Tests und Ergänzung der JavaDoc Kommentare.
+### JUnit Tests
+Wir haben gemeinsam überlegt welche JUnit Tests nötig sind und wie die bestehenden Methoden gemeinsam getestet werden können. Um unabhängig voneinander zeitgleich arbeiten zu können, haben wir die Methoden-Header erstellt und die Funktion abgestimmt. Danach hat jeder für sich die  aufgeteilten Tests umgesetzt und JavaDoc Kommentare bei den eigenen Tests ergänzt.
 
 **Ein Beispiel eines Tests:**
 ```
@@ -62,17 +63,37 @@ Ergänzung License und Entwicklerinformationen in der pom.xml durch Pascal.
     }
 ```
 
-Zur Anmerkung bezüglich maxSize, die in der StringQueue Klasse zugewiesen wird: Wir haben diese gelöscht, weil dem Constructor immer ein Wert mit übergeben wird. Die JavaDoc Info zu allen Tests:
+Zur zuvorigen Anmerkung bezüglich maxSize, die in der StringQueue Klasse zugewiesen wird: Wir haben diese gelöscht, weil dem Constructor immer ein Wert mit übergeben wird. Die JavaDoc Info zu allen Tests:
 
 ![Testung](media/Testung.jpg)
 
-Damit die Bilder zu JavaDoc angezeigt werden, musste der media-Ordner aus der .gitignore entfernt werden. Er ist somit Teil des Repositorys.
+Damit die Bilder zu JavaDoc in diesem Lab Report angezeigt werden können, musste der media-Ordner aus der .gitignore entfernt werden. Er ist somit ausnahmsweise Teil des Repositorys, obwohl die Inhalte im Projekt generiert werden.
 
-####log4j
-Pascal hat die zwei Dependencys in der pom.xml ergänzt, die für Log4j nötig sind. Außerdem haben wir das properties-File vom Stack-Beispiel übernommen.
+### log4j
+Pascal hat die zwei Dependencys in der pom.xml ergänzt, die für Log4j nötig sind. Außerdem haben wir das properties-File vom Stack-Beispiel übernommen. Zusätzlich: Imortieren der nötigen Klassen und Erstellen eines Loggers. In jeder Methode wurde eine Info geloggt, dass die jeweilige Methode aufgerufen wird und vor jeder Exception wurde ein Error geloggt. So sieht das Ergebnis aus:
 
-####Lab Report
-Die Verfassung des Lap Reports / readme ist OHNE Markdown Editor passiert. Deshalb kam es hin und wieder zu nötigen Richtigstellungen der Befehle. Für die Zukunft wäre ein entsprechender Editor, in dem die Formatierungsbefehle ausgeführt werden zu empfehlen.
+![log4j](media/log.jpg)
+
+### Maven Site Dokumentation
+Nach anfänglichen kleinen Schwierigkeiten, weil unter build im pom.xml das Maven Site Plugin gefehlt hat und der entsprechenden Ergänzung haben wir mvn site laufen lassen und eine erste Dokumentation erhalten. Um einen Menüpunkt zu ergänzen,
+
+Hier das Ergebnis:
+
+![MavenSite](media/maven.jpg)
+
+### Lab Report
+Die Verfassung des Lap Reports ist OHNE Markdown Editor passiert. Deshalb kam es hin und wieder zu nötigen Richtigstellungen der Befehle. Für die Zukunft wäre ein entsprechender Editor, in dem die Formatierungsbefehle direkt ausgeführt werden, zu empfehlen.
+
+Um auch noch ein wenig Python in Markdown einzubinden:
+```
+print("Goodbye, World!")
+x = 1
+if x == 1:
+    # indented four spaces
+    print("x is 1.")
+```
+
+Die commits im Überblick:
 
 -----
 
