@@ -15,10 +15,11 @@ Im Rahmen dieser Übung werden alle Lehrveranstaltungsinhalte von Konfigurations
 - [X] Übertragen der Taskliste in Markdown Readme
 - [X] Einspielen der Queue Vorlage
 - [X] Korrigieren / Verbessern
-- [ ] Klassen- und Methodenkommentare mittels Javadoc
+- [X] Klassen- und Methodenkommentare mittels Javadoc
 - [ ] JUnit Tests erstellen
 - [ ] Programmtestung
 - [ ] Anpassen der pom.xml
+- [ ] Log4j integrieren
 - [ ] Maven Site Dokumentation
 - [ ] Erstellung und nachvollziehbarer Markdown Lab Report
 - [ ] Vollständigkeit der Abgabe überprüfen
@@ -39,6 +40,12 @@ Gemeinsame Fehlersuche auf Pascals Laptop:
 **Anmerkung:** Wir müssen beim JUnit-Test herausfinden, ob die maxSize wirklich verwendet wird (aktuell als redundant angezeigt).
 
 Pascal hat die Methoden dann zusätzlich etwas übersichtlicher gestaltet: Klammern, return-Werte, etc.
+
+Die Klassen- und Methodenkommentare wurden von Eva verfasst und eine API Dokumentation in folgender Form über IntelliJ-Tools erzeugt:
+
+![JavaDoc](media/javadoc.png)
+
+Die Verfassung des Lap Reports / readme ist OHNE Markdown Editor passiert. Deshalb kam es hin und wieder zu nötigen Richtigstellungen der Befehle. Für die Zukunft wäre ein entsprechender Editor, in dem die Formatierungsbefehle ausgeführt werden zu empfehlen.
 
 ## Links / Literatur
 Unterlagen aus den Vorlesungen und vorangegangenen Übungen. Weiterführende Links der Aufgabenstellung.
