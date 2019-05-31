@@ -50,7 +50,6 @@ public class StringQueueTest {
     /**
      * Tests whether false ist returned when offering more elements than allowed by maxSize
      */
-
     @Test
     public void testOfferOverflow() {
         testQueue.offer("Ich");
@@ -60,6 +59,19 @@ public class StringQueueTest {
         testQueue.offer("Spaß");
 
         Assert.assertFalse(testQueue.offer("."));
+    }
+
+    /**
+     * Test whether setting queue size works
+     */
+    @Test
+    public void testMaxSizeSetting() {
+        testQueue = new StringQueue(3);
+
+        Assert.assertTrue(testQueue.offer("STRING"));
+        Assert.assertTrue(testQueue.offer("STRING"));
+        Assert.assertTrue(testQueue.offer("STRING"));
+        Assert.assertFalse(testQueue.offer("STRING"));
     }
 
     /**
