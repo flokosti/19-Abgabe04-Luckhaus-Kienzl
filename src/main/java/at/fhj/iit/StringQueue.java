@@ -13,7 +13,7 @@ import java.util.NoSuchElementException;
 public class StringQueue implements Queue {
 
 	private List<String> elements = new ArrayList<String>();
-	private int maxSize = 5;
+	private int maxSize;
 
 	/**
 	 * Construtor of a String queue
@@ -28,7 +28,6 @@ public class StringQueue implements Queue {
 	 * @param obj is added to the String queue
 	 * @return true if addition is successful, else false
 	 */
-	@Override
 	public boolean offer(String obj) {
 		if(elements.size()!= maxSize) {
 			elements.add(obj);
