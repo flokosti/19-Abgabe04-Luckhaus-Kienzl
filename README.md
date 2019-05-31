@@ -43,7 +43,9 @@ Pascal hat die Methoden dann zusätzlich etwas übersichtlicher gestaltet: Klamm
 
 Die Klassen- und Methodenkommentare wurden von Eva verfasst und eine API Dokumentation in folgender Form über IntelliJ-Tools erzeugt:
 
-![JavaDoc](media/javadoc.png)
+![JavaDoc](../media/javadoc.png)
+
+License und pom.xml durch Pascal.
 
 Die Verfassung des Lap Reports / readme ist OHNE Markdown Editor passiert. Deshalb kam es hin und wieder zu nötigen Richtigstellungen der Befehle. Für die Zukunft wäre ein entsprechender Editor, in dem die Formatierungsbefehle ausgeführt werden zu empfehlen.
 
