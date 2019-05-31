@@ -75,7 +75,7 @@ Pascal hat die zwei Dependencys in der pom.xml ergänzt, die für Log4j nötig s
 ![log4j](media/log.jpg)
 
 ### Maven Site Dokumentation
-Nach anfänglichen kleinen Schwierigkeiten, weil unter build im pom.xml das Maven Site Plugin gefehlt hat und der entsprechenden Ergänzung haben wir mvn site laufen lassen und eine erste Dokumentation erhalten. Um einen Menüpunkt zu ergänzen,
+Nach anfänglichen kleinen Schwierigkeiten, weil unter build im pom.xml das Maven Site Plugin gefehlt hat und der entsprechenden Ergänzung haben wir mvn site laufen lassen und eine erste Dokumentation erhalten. Um einen Menüpunkt zu ergänzen, haben wir in der index.html einen Link ergänzt. Bevor mvn site erneut aufgerufen wird und der Link entsteht räumen wir mit mvn clean sicherheitshalber auf.
 
 Hier das Ergebnis:
 
@@ -85,6 +85,7 @@ Hier das Ergebnis:
 Die Verfassung des Lap Reports ist OHNE Markdown Editor passiert. Deshalb kam es hin und wieder zu nötigen Richtigstellungen der Befehle. Für die Zukunft wäre ein entsprechender Editor, in dem die Formatierungsbefehle direkt ausgeführt werden, zu empfehlen.
 
 Um auch noch ein wenig Python in Markdown einzubinden:
+
 ```
 print("Goodbye, World!")
 x = 1
