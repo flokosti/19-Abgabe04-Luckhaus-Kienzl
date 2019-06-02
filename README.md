@@ -20,7 +20,7 @@ Im Rahmen dieser Übung werden alle Lehrveranstaltungsinhalte von Konfigurations
 - [X] Programmtestung
 - [X] Anpassen der pom.xml
 - [X] Log4j integrieren
-- [ ] Maven Site Dokumentation
+- [x] Maven Site Dokumentation
 - [X] Erstellung und nachvollziehbarer Markdown Lab Report
 - [ ] Vollständigkeit der Abgabe überprüfen
 - [ ] Abgabe PDF Version
