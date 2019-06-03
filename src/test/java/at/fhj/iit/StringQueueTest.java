@@ -91,7 +91,7 @@ public class StringQueueTest {
     public void testPeekUnderflow() {
         String test = testQueue.peek();
 
-        Assert.assertTrue(test == null);
+        Assert.assertNull(test);
 
     }
 
@@ -101,7 +101,7 @@ public class StringQueueTest {
     @Test
     public void testDoubleElement() {
         testQueue.offer("Teststring");
-        Assert.assertTrue(testQueue.element().equals(testQueue.element()));
+        Assert.assertEquals(testQueue.element(), testQueue.element());
     }
 
     /**
@@ -122,10 +122,10 @@ public class StringQueueTest {
 
     /**
      * Try to retrieve an element from empty queue using remove method
-     * @throws Exception
+     * @throws NoSuchElementException When trying to remove element from empty queue
      */
     @Test (expected = NoSuchElementException.class)
-    public void testRemoveUnderflow() throws Exception {
+    public void testRemoveUnderflow() throws NoSuchElementException {
         testQueue.remove();
     }
 }
