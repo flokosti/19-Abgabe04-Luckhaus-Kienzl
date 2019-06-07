@@ -71,7 +71,7 @@ Zur zuvorigen Anmerkung bezüglich maxSize, die in der StringQueue Klasse zugewi
 Damit die Bilder zu JavaDoc in diesem Lab Report angezeigt werden können, musste der media-Ordner aus der .gitignore entfernt werden. Er ist somit ausnahmsweise Teil des Repositorys, obwohl die Inhalte der Screenshots eigentlich im Projekt generiert werden.
 
 ### log4j
-Pascal hat die zwei Dependencys in der pom.xml ergänzt, die für Log4j nötig sind. Außerdem haben wir das properties-File vom Stack-Beispiel übernommen. Zusätzlich: Imortieren der nötigen Klassen und Erstellen eines Loggers. In jeder Methode wurde eine Info geloggt, dass die jeweilige Methode aufgerufen wird und vor jeder Exception wurde ein Error geloggt. So sieht das Ergebnis aus:
+Pascal hat die zwei Dependencies in der pom.xml ergänzt, die für Log4j nötig sind. Außerdem haben wir das properties-File vom Stack-Beispiel übernommen. Zusätzlich: Importieren der nötigen Klassen und Erstellen eines Loggers. In jeder Methode wurde eine Info geloggt, dass die jeweilige Methode aufgerufen wird und vor jeder Exception wurde ein Error geloggt. So sieht das Ergebnis aus:
 
 ![log4j](media/log.jpg)
 
