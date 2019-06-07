@@ -23,7 +23,7 @@ Im Rahmen dieser Übung werden alle Lehrveranstaltungsinhalte von Konfigurations
 - [x] Maven Site Dokumentation
 - [X] Erstellung und nachvollziehbarer Markdown Lab Report
 - [X] Vollständigkeit der Abgabe überprüfen
-- [ ] Abgabe PDF Version
+- [X] Abgabe PDF Version
 
 -----
 
@@ -97,8 +97,7 @@ if x == 1:
 
 Die Commits dieser Übung im Überblick:
 
-![Commit Messages - Part1](media/commits1.jpg)
-![Commit Messages - Part2](media/commits2.jpg)
+![Commit Messages](media/commits1.jpg)
 
 -----
 
